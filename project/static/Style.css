@@ -1,0 +1,152 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #0f172a;
+    color: #e2e8f0;
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+nav {
+    position: sticky;
+    top: 0;
+    background: #020617;
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0 0 10px rgba(0,255,255,0.2);
+}
+
+nav a {
+    text-decoration: none;
+    color: #94a3b8;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #22d3ee;
+    text-shadow: 0 0 10px #22d3ee;
+}
+
+nav a.active {
+    color: #38bdf8;
+    text-shadow: 0 0 15px #38bdf8;
+}
+
+/* Hero */
+.hero {
+    padding: 100px 20px;
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.hero-text h1 {
+    font-size: 40px;
+    color: #38bdf8;
+}
+
+#typing {
+    color: #22d3ee;
+    border-right: 2px solid #22d3ee;
+}
+
+/* Image */
+.hero-img img {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    border: 3px solid #22d3ee;
+    box-shadow: 0 0 25px #22d3ee;
+    object-fit: cover;
+}
+
+/* Buttons */
+.btn {
+    padding: 12px 25px;
+    margin: 10px;
+    border: 1px solid #22d3ee;
+    background: transparent;
+    color: #22d3ee;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: 0.3s;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn:hover {
+    background: #22d3ee;
+    color: black;
+    box-shadow: 0 0 15px #22d3ee;
+}
+
+/* Sections */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* Cards */
+.card {
+    background: #020617;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 10px;
+    border: 1px solid #1e293b;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(56,189,248,0.3);
+}
+
+/* Grid */
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Inputs */
+input, textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 12px;
+    background: #020617;
+    border: 1px solid #334155;
+    color: white;
+    border-radius: 6px;
+    outline: none;
+    transition: 0.3s;
+}
+
+/* Focus glow */
+input:focus, textarea:focus {
+    border-color: #22d3ee;
+    box-shadow: 0 0 10px #22d3ee;
+}
+
+/* Textarea height */
+textarea {
+    height: 120px;
+    resize: none;
+}
+
+/* Button center */
+form .btn {
+    width: 200px;
+}
+/* Responsive */
+@media(max-width:768px){
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}

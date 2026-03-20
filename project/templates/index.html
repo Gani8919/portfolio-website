@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ganesh Sai | Data Analyst</title>
+
+<!-- Google Font -->
+<link rel="stylesheet" href="{{ url_for('static', filename='Style.css') }}">
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav>
+<a href="#about">About</a>
+<a href="#experience">Experience</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+<div class="hero-container">
+
+<div class="hero-text">
+<h1>Kolamudi Ganeshsai</h1>
+<h2><span id="typing"></span></h2>
+<p>Turning Data into Actionable Insights</p>
+
+<button class="btn" onclick="scrollToSection('projects')">View My Projects</button>
+<a href="/download">
+<button class="btn">Download Resume</button>
+</a>
+</div>
+
+<div class="hero-img">
+<img src="{{ url_for('static', filename='profile.png') }}">
+</div>
+
+</div>
+</section>
+
+<!-- About -->
+<section id="about">
+<h2>About Me</h2>
+<p>
+Data-driven and detail-oriented Entry-Level Data Analyst with hands-on experience transforming operational and insurance datasets into actionable insights. Proficient in Excel, SQL, Python, and Power BI, with a strong foundation in data cleaning, validation, and visualization. Experienced in automating reporting processes to improve efficiency and reduce manual effort.
+
+Skilled in analyzing policy, claims, and customer data to support faster and smarter business decision-making. Adept at identifying discrepancies, ensuring data accuracy, and handling high-volume financial datasets in fast-paced environments.
+
+Possess working knowledge of backend data operations using Python and SQL, including data extraction, transformation, and database querying. Passionate about leveraging data analytics and backend development skills to solve real-world business problems and deliver impactful insights.</p>
+</section>
+
+<!-- Experience -->
+<section id="experience">
+<h2>Experience</h2>
+<div class="card">
+<h3>Relationship Manager</h3>
+<p>Company: TATA AIA Life Insurance</p>
+<p>Duration: July 2025 – Present</p>
+<ul style="text-align:left;">
+<li>Managed end-to-end customer relationships, handling policy sales, renewals, and service requests in a high-volume insurance environment.</li>
+<li>Advised customers on suitable insurance products based on financial needs, improving customer satisfaction and retention.</li>
+<li>Handled customer queries, complaints, and policy servicing, ensuring timely resolution and strong client trust.</li>
+<li>Tracked sales performance, renewals, and customer interactions using Excel, maintaining accurate records.</li>
+<li>Monitored customer data and identified patterns to support cross-selling and upselling opportunities.</li>
+<li>Ensured data accuracy and proper documentation of customer and policy information.</li>
+<li>Collaborated with internal teams to improve service delivery and operational efficiency.</li>
+<li>Generated basic reports on sales targets, customer activity, and performance metrics.</li>
+</ul>
+<p>Skills Gained: Customer Relationship Management | Sales Analysis | Excel Reporting | Communication | Problem Solving | Data Handling</p>
+</div>
+</section>
+
+<!-- Skills -->
+<section id="skills">
+<h2>Skills</h2>
+<div class="grid">
+<div class="card">Data Cleaning</div>
+<div class="card">Data Analysis</div>
+<div class="card">Data Modeling</div>
+<div class="card">Data Visualization</div>
+<div class="card">Python</div>
+<div class="card">SQL</div>
+<div class="card">Excel</div>
+<div class="card">Power BI</div>
+<div class="card">Pandas</div>
+<div class="card">NumPy</div>
+<div class="card">Matplotlib</div>
+</div>
+</section>
+
+<!-- Projects -->
+<section id="projects">
+<h2>Projects</h2>
+
+<div class="grid">
+<div class="card">
+<h3>Insurance Analytics Project</h3>
+<p>Analyzed large-scale insurance datasets including policies, claims, agents, and customers to uncover operational insights and improve decision-making. Performed data validation and reconciliation to ensure high data accuracy before analysis. Developed interactive dashboards in Power BI to track policy performance, claims trends, and agent productivity. Automated recurring reports using Excel, reducing manual effort by 40%.</p>
+<p><b>Tools:</b> Excel, SQL, Python</p>
+</div>
+
+<div class="card">
+<h3>Haze-Resilient Number Plate Detection System</h3>
+<p>Developed a computer vision system to detect and recognize vehicle number plates in low-visibility (hazy) conditions. Processed and validated large image datasets to ensure high-quality model inputs. Applied image dehazing and preprocessing techniques to improve detection accuracy. Evaluated model performance using metrics such as precision, recall, and accuracy, and documented the complete methodology and results in a technical research paper.</p>
+<p><b>Tools:</b> Python, OpenCV, YOLOv8, PaddleOCR</p>
+</div>
+
+<div class="card">
+<h3>Sales Analysis</h3>
+<p>Analyzed sales data to identify revenue trends, top-performing products, and customer purchasing patterns. Cleaned and processed raw datasets to ensure accuracy and consistency before analysis. Used Excel and SQL to perform data aggregation and generate insights on sales performance. Created interactive dashboards to track KPIs such as revenue, growth, and product-wise performance, enabling better business decision-making.</p>
+<p><b>Tools:</b> SQL, Python, Power BI</p>
+</div>
+</div>
+
+</section>
+
+<!-- Contact -->
+<section id="contact">
+<h2>Contact</h2>
+
+<div class="card">
+<form action="/submit" method="POST">
+<input type="text" name="name" placeholder="Your Name" required>
+<input type="email" name="email" placeholder="Your Email" required>
+<textarea name="message" placeholder="Your Message" required></textarea>
+<button class="btn">Send Message</button>
+</form>
+</div>
+</section>
+
+<!-- Footer -->
+<footer>
+<p>© 2026 Kolamudi Ganeshsai</p>
+</footer>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
